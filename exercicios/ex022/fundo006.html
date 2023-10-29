@@ -3,24 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>prototipo de site</title>
+    <title>fundo fixo de tela</title>
     <style>
         body{
-            height: 100vh;
+            /*height: 100vh;
             background-color: black;
             background-image: url(Imagens/wallpaper002.jpg);
             background-position: center top;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            */
+            /*
+        sequencia de shorthand para background
+        color > image > position > repeat > attachment
+        */
+        background: black url(Imagens/wallpaper002.jpg) center top no-repeat fixed;
+        background-size: cover;
         }
+        
+
         main{
             background-color: white;
-            width: 400px;
+            max-width: 500px;
             padding: 15px;
             margin: auto;
             text-align: justify;
             border-radius: 5px;
             border: 2px solid black;
+
         }
         h1{
             text-align: center;
