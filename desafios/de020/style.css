@@ -13,22 +13,73 @@
     font-weight: normal;
     font-size: normal;
 }
+*{
+    margin: 0px;
+    padding: 0px;
+}
 :root{
     --fonte-padrao:Arial, Verdana, Helvetica, sans-serif;
     --fonte-cabeçalho: 'Monte';
     --fonte-texto:'sabado';
 }
+html, body{
+    min-height: 100vh;
+
+}
 header{
     background-color: black;
-    padding: 0px;
     text-align: center;
     
 }
 header > h1{
     font-family: var(--fonte-cabeçalho);
+    font-variant: small-caps;
+    color: white;
+    padding-top: 50px;
+    font-size: 80px;
     
 }
-
+header > p{
+    color: white;
+    padding-bottom: 50px;
+    text-decoration: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    background-color: rgba(228, 228, 228, 0.288);
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: underline;
+}
 section{
     font-family: var(--fonte-texto);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 3em;
+
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(61, 60, 60);
+    color: white;
+}
+section.imagem > p{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.267);
+
+
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 5px;
 }
