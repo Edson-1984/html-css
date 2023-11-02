@@ -12,11 +12,17 @@
       table{
           width: 800px;
           border-collapse: collapse;
+          position: relative;
         
       }
       tbody > tr:nth-child(2n){
           background-color:  rgba(118, 118, 250, 0.979);
     
+      }
+      thead > tr > th{
+          position: sticky;
+          top: 0;
+          background-color: blue;
       }
       caption{
           font-size: 1.5em;
@@ -25,7 +31,7 @@
           background-color: rgba(118, 118, 250, 0.979);
           color: white;
       }
-
+      
       td, tr,th{
         border: 1px solid black;
         padding: 10px;
