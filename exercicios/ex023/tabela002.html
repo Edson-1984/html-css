@@ -14,6 +14,17 @@
           border-collapse: collapse;
         
       }
+      tbody > tr:nth-child(2n){
+          background-color:  rgba(118, 118, 250, 0.979);
+    
+      }
+      caption{
+          font-size: 1.5em;
+          font-weight: bolder;
+          padding: 10px;
+          background-color: rgba(118, 118, 250, 0.979);
+          color: white;
+      }
 
       td, tr,th{
         border: 1px solid black;
@@ -27,15 +38,20 @@
       td.num{
           text-align: right;
       }
+      tfoot{
+          background-color: blue;
+          color: white;
+      }
     </style>
 </head>
 <body>
     <table>
+        <caption>População do Brasil por Estados</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -178,7 +194,7 @@
         <tfoot>
             <tr>
                 <td>00</td>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><STRONG> 	203 062 512	 </STRONG></td>
             </tr>
         </tfoot>
