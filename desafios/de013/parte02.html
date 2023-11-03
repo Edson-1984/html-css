@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio 02 de tabelas</title>
+    <style>
+        table{
+            width: 300px;
+            height: 300px;
+        }
+        tr, td{
+            border: 1px solid black;
+            text-align: center;
+        }
+        td{
+            background-color: #87546A;
+        }
+        td.mesclado1{
+            background-color:#8ef3df;
+        }
+        td.mesclado2{
+            background-color:#7de6f7;
+        }
+        td.mesclado3{
+            background-color:#afb1ee;
+        }
+        td.mesclado4{
+            background-color:#d389b9;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="4" class="mesclado1">A</td>
+                
+                <td rowspan="4" class="mesclado2">B</td>
+            </tr>
+            <tr>
+                <td rowspan="4" class="mesclado3">C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+              
+            </tr>
+            <tr>
+               
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+                
+            </tr>
+            <tr>
+                
+                
+                <td>J</td>
+                <td>K</td>
+                <td>L</td>
+                
+            </tr>
+            <tr>
+              
+                <td colspan="4" class="mesclado4">M</td>
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+</html>
