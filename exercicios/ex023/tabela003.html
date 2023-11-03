@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclando celulas da tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 600px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        thead{
+            background-color: rgb(114, 114, 114);
+            color: white;
+            font-style: italic;
+            
+
+        }
+        tbody > tr:nth-child(2n){
+            background-color: blanchedalmond;
+        }
+        tr, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>mesclagem de tabelas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>Capital</th>
+                <th>Sigla</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Acre</td>
+                <td>Rio branco</td>
+                <td>AC</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td>Maceió</td>
+                <td>AL</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td>Macapá</td>
+                <td>AP</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>Manaus</td>
+                <td>AM</td>
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+</html>
