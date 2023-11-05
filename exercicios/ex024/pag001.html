@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Tabelas</title>
+    <style>
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        tr, th,td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        tbody{
+            text-align: left;
+        }
+        .cnome{
+            background-color: aqua;
+        }
+        .csexo{
+            background-color: blanchedalmond;
+        }
+        .cidade{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo" span="2">
+            <col class="cidade">
+            <col class="cprof">
+
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody> 
+            <tr>
+                <td>Isadora</td>
+                <td> Feminino</td>
+                <td>32</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>José Bonifácio</td>
+                <td> Masculino</td>
+                <td>52</td>
+                <td>Médico</td>
+            </tr>
+            <tr>
+                <td>Maria Luíza</td>
+                <td> Feminino</td>
+                <td>25</td>
+                <td>Arquiteta</td>
+            </tr>
+            <tr>
+                <td>Rodrigo</td>
+                <td> Masculino</td>
+                <td>41</td>
+                <td>Pedreiro</td>
+            </tr>
+            <tr>
+                <td>Marua de Lourdes</td>
+                <td> Feminino</td>
+                <td>71</td>
+                <td>Aposentada</td>
+            </tr>
+            <tr>
+                <td>Luana</td>
+                <td> Feminino</td>
+                <td>42</td>
+                <td>Fisioterapeuta</td>
+            </tr>
+            <tr>
+                <td>Joel Castro</td>
+                <td> Masculino</td>
+                <td>44</td>
+                <td>Arquiteto</td>
+            </tr>
+            <tr>
+                <td>Amanda</td>
+                <td> Feminino</td>
+                <td>33</td>
+                <td>Nutricionista</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+</body>
+</html>
