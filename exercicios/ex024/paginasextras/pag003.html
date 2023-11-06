@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista de filmes</title>
+    <style>
+        h1{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-size: 30px;
+        }
+        p{
+            text-align: justify;
+        }
+        table{
+            width: 1000px;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        caption{
+            font-size: 2em;
+        }
+        tr, th, td{
+            border: 1px solid black;
+            padding: 2px;
+        }
+        tr:nth-child(2n){
+            background-color: cadetblue;
+        }
+        td{
+            text-align: center;
+        }
+        .tabela{
+          overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Tabela de Filmes</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nome</th>
+                <th colspan="3" scope="colgroup">Filmes Favoritos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <th rowspan="4" scope="rowgroup">Mulher</th>
+              <td>Maria da Silva</td>
+              <td>O pianista</td>
+              <td> V de vingança</td>
+              <td>Bastardos Inglórios</td>
+            </tr>
+            <tr>
+                
+                <td>Raquel Medeiros</td>
+                <td>Ip man</td>
+                <td>Atirador Americano</td>
+                <td>Tróia</td>
+              </tr>
+              <tr>
+                
+                <td>Julia Souza</td>
+                <td>Matrix</td>
+                <td>Caça Fantasmas</td>
+                <td>Dia de fúria</td>
+              </tr>
+              <tr>
+               
+                <td>Maria da Silva</td>
+                <td>O pianista</td>
+                <td> V de vingança</td>
+                <td>Bastardos Inglórios</td>
+              </tr>
+              <tr>
+                <th rowspan="4" scope="rowgroup">Homem</th>
+                <td>Ramiro Nascimento</td>
+                <td>Piratas do Caribe</td>
+                <td>Hitman</td>
+                <td>Um Sonho de Libertade</td>
+              </tr>
+              <tr>
+                
+                <td>José Batista</td>
+                <td>Milagre na Cela 7</td>
+                <td>O Violino do Meu Pai</td>
+                <td>Escritores da Libertade</td>
+              </tr>
+              <tr>
+               
+                <td>Edson Nóbrega</td>
+                <td>Rocky Um Lutador</td>
+                <td>A Procura da Felicidade</td>
+                <td>O Menino Que Descobriu O Vento</td>
+              </tr>
+              <tr>
+               
+                <td>Ronaldo Azevedo</td>
+                <td>Operação Valquiria</td>
+                <td>O Conde de Monte Cristo</td>
+                <td>O Estágiario</td>
+              </tr>
+            
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+</html>
